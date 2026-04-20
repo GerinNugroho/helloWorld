@@ -1,17 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biodata</title>
-</head>
-<body>
-    <h1> Gerin Nugroho</h1>
-    <ul>
-        <li>Nama: Muhammad Gerin Nugroho</li>
-        <li>NIM : 24.11.6148</li>
-        <li>Kelas: Informatika 04</li>
-        <li>Hobi : Tidur pun sodap niii</li>
-    </ul>
-</body>
+  </head>
+  <body>
+    <h1>Challange_24.11.6148</h1>
+    <table border="1px" cellspacing="0">
+      <tr>
+        <th colspan="4">Daftar Buku</th>
+      </tr>
+      <tr>
+        <td rowspan="4">
+          <img src="./assets/books.jpg" alt="king yellow" width="100px" />
+        </td>
+      </tr>
+      <tr>
+        <td>Judul</td>
+        <td>:</td>
+        <td>Web Programming</td>
+      </tr>
+      <tr>
+        <td>harga</td>
+        <td>:</td>
+        <td>Rp 245.000.00</td>
+      </tr>
+      <tr>
+        <td>Pengarang</td>
+        <td>:</td>
+        <td>H.P Lovecratft</td>
+      </tr>
+    </table>
+    <h2>Isilah Formulir dibawah ini</h2>
+    <form method="post" action="no idea" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td style="width: 300px">Nama:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin:</td>
+          <td>
+            <input type="radio" name="rd-pria" value="pria" />
+            <label for="rd_pria">Pria</label>
+            <input type="radio" name="rd-wanita" value="wanita" />
+            <label for="rd_pria">Wanita</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Hobi:</td>
+          <td>
+            <input type="checkbox" name="chk-buku" value="menulis" />
+            <label for="chk_buku">Membaca buku</label>\
+            <input type="checkbox" name="chk-tulis" value="menulis" />
+            <label for="chk_buku">Menulis</label>
+            <input type="checkbox" name="chk-mancing" value="mancing" />
+            <label for="chk_mancing">Memancing</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Asal Kota:</td>
+          <td>
+            <select name="asal" id="asal">
+              <option value="Semarang">Semarang</option>
+              <option value="Sleman">Sleman</option>
+              <option value="Jakarta">Jakarta</option>
+              <option value="Padang">Padang</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Hobi:</td>
+          <td>
+            <textarea
+              name="komentar"
+              id="txt-comment"
+              placeholder="Silahkan masukkan komentar anda"
+            >
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="submit">Mulai personal</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
 </html>
